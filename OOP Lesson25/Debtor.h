@@ -26,6 +26,23 @@ public:
 	string Address() const { return address; }
 	int Debt() const { return debt; }
 
+	unsigned short getMonthNo() const
+	{
+		if (birthDay.month == "January") return 1;
+		else if (birthDay.month == "February") return 2;
+		else if (birthDay.month == "March") return 3;
+		else if (birthDay.month == "April") return 4;
+		else if (birthDay.month == "May") return 5;
+		else if (birthDay.month == "June") return 6;
+		else if (birthDay.month == "July") return 7;
+		else if (birthDay.month == "August") return 8;
+		else if (birthDay.month == "September") return 9;
+		else if (birthDay.month == "October") return 10;
+		else if (birthDay.month == "November") return 11;
+		else if (birthDay.month == "December") return 12;
+
+		return -1;
+	}
 
 };
 
